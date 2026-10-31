@@ -1,0 +1,110 @@
+{
+ "data": {
+  "schedule": {
+   "events": [
+    {
+     "type": "esports",
+     "league": {
+      "id": "98767975604431411",
+      "slug": "worlds",
+      "name": "Worlds"
+     },
+     "match": {
+      "id": "115660588583171790",
+      "teams": [
+       {
+        "id": "111692118851466302",
+        "code": "KC",
+        "name": "Karmine Corp"
+       },
+       {
+        "id": "107251245690956393",
+        "code": "MVK",
+        "name": "MVK Esports"
+       }
+      ],
+      "strategy": {
+       "type": "bestOf",
+       "count": 3
+      },
+      "games": [
+       {
+        "id": "115660588583171791",
+        "number": 1,
+        "state": "completed",
+        "gameState": "complete",
+        "teams": [
+         {
+          "id": "111692118851466302",
+          "side": "blue"
+         },
+         {
+          "id": "107251245690956393",
+          "side": "red"
+         }
+        ]
+       },
+       {
+        "id": "115660588583171792",
+        "number": 2,
+        "state": "inProgress",
+        "gameState": "inProgress",
+        "teams": [
+         {
+          "id": "111692118851466302",
+          "side": "blue"
+         },
+         {
+          "id": "107251245690956393",
+          "side": "red"
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "type": "esports",
+     "league": {
+      "id": "147299458150219893",
+      "slug": "lpl",
+      "name": "LPL"
+     },
+     "match": {
+      "id": "1001",
+      "teams": [
+       {
+        "id": "11",
+        "code": "TC",
+        "name": "Test Corps"
+       },
+       {
+        "id": "12",
+        "code": "DD",
+        "name": "Dummy Dragons"
+       }
+      ],
+      "games": [
+       {
+        "id": "1002",
+        "number": 1,
+        "state": "inProgress",
+        "gameState": "inProgress",
+        "teams": [
+         {
+          "id": "11",
+          "side": "blue"
+         },
+         {
+          "id": "12",
+          "side": "red"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

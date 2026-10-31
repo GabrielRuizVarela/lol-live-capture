@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+node_modules/
+ui/dist/
+src/lol_live_capture/web/
+# Riot's broadcast footage: kept locally for the recognizer tests, never committed
+tests/fixtures/private/
+.env

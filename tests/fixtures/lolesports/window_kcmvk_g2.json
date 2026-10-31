@@ -1,0 +1,97 @@
+{
+ "esportsGameId": "115660588583171792",
+ "esportsMatchId": "115660588583171790",
+ "gameMetadata": {
+  "patchVersion": "16.20.826.3891",
+  "blueTeamMetadata": {
+   "esportsTeamId": "111692118851466302",
+   "participantMetadata": [
+    {
+     "participantId": 1,
+     "esportsPlayerId": "103495716771322725",
+     "summonerName": "KC Canna",
+     "championId": "Galio",
+     "role": "top"
+    },
+    {
+     "participantId": 2,
+     "esportsPlayerId": "105537190986692036",
+     "summonerName": "KC Yike",
+     "championId": "LeeSin",
+     "role": "jungle"
+    },
+    {
+     "participantId": 3,
+     "esportsPlayerId": "108205130709313212",
+     "summonerName": "KC kyeahoo",
+     "championId": "Ahri",
+     "role": "mid"
+    },
+    {
+     "participantId": 4,
+     "esportsPlayerId": "109461265532592848",
+     "summonerName": "KC Caliste",
+     "championId": "Ashe",
+     "role": "bottom"
+    },
+    {
+     "participantId": 5,
+     "esportsPlayerId": "106625308523122120",
+     "summonerName": "KC Busio",
+     "championId": "Seraphine",
+     "role": "support"
+    }
+   ]
+  },
+  "redTeamMetadata": {
+   "esportsTeamId": "107251245690956393",
+   "participantMetadata": [
+    {
+     "participantId": 6,
+     "esportsPlayerId": "109828407662355333",
+     "summonerName": "MVK Kratos",
+     "championId": "TwistedFate",
+     "role": "top"
+    },
+    {
+     "participantId": 7,
+     "esportsPlayerId": "113628612494074867",
+     "summonerName": "MVK SanSan",
+     "championId": "Qiyana",
+     "role": "jungle"
+    },
+    {
+     "participantId": 8,
+     "esportsPlayerId": "113628612585554951",
+     "summonerName": "MVK Chika",
+     "championId": "Rumble",
+     "role": "mid"
+    },
+    {
+     "participantId": 9,
+     "esportsPlayerId": "109828431746365782",
+     "summonerName": "MVK Harky",
+     "championId": "Ezreal",
+     "role": "bottom"
+    },
+    {
+     "participantId": 10,
+     "esportsPlayerId": "112834609700454416",
+     "summonerName": "MVK SiuLoong",
+     "championId": "Pyke",
+     "role": "support"
+    }
+   ]
+  }
+ },
+ "frames": [
+  {
+   "rfc460Timestamp": "2026-10-16T19:30:00.311Z",
+   "gameState": "in_game"
+  },
+  {
+   "rfc460Timestamp": "2026-10-16T19:30:09.868Z",
+   "gameState": "in_game"
+  }
+ ]
+}

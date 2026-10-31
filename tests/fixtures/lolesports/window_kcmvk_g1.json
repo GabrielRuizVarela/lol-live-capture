@@ -1,0 +1,86 @@
+{
+ "esportsGameId": "115660588583171791",
+ "esportsMatchId": "115660588583171790",
+ "gameMetadata": {
+  "blueTeamMetadata": {
+   "esportsTeamId": "111692118851466302",
+   "participantMetadata": [
+    {
+     "participantId": 1,
+     "championId": "Jayce",
+     "role": "top",
+     "summonerName": "KC Canna"
+    },
+    {
+     "participantId": 2,
+     "championId": "Vi",
+     "role": "jungle",
+     "summonerName": "KC Yike"
+    },
+    {
+     "participantId": 3,
+     "championId": "Syndra",
+     "role": "mid",
+     "summonerName": "KC kyeahoo"
+    },
+    {
+     "participantId": 4,
+     "championId": "Draven",
+     "role": "bottom",
+     "summonerName": "KC Caliste"
+    },
+    {
+     "participantId": 5,
+     "championId": "Nautilus",
+     "role": "support",
+     "summonerName": "KC Busio"
+    }
+   ]
+  },
+  "redTeamMetadata": {
+   "esportsTeamId": "107251245690956393",
+   "participantMetadata": [
+    {
+     "participantId": 6,
+     "championId": "Ambessa",
+     "role": "top",
+     "summonerName": "MVK Kratos"
+    },
+    {
+     "participantId": 7,
+     "championId": "Maokai",
+     "role": "jungle",
+     "summonerName": "MVK Gury"
+    },
+    {
+     "participantId": 8,
+     "championId": "KSante",
+     "role": "mid",
+     "summonerName": "MVK Chika"
+    },
+    {
+     "participantId": 9,
+     "championId": "Tristana",
+     "role": "bottom",
+     "summonerName": "MVK Harky"
+    },
+    {
+     "participantId": 10,
+     "championId": "Lulu",
+     "role": "support",
+     "summonerName": "MVK SiuLoong"
+    }
+   ]
+  }
+ },
+ "frames": [
+  {
+   "rfc460Timestamp": "2026-10-16T18:41:54.122Z",
+   "gameState": "in_game"
+  },
+  {
+   "rfc460Timestamp": "2026-10-16T18:41:57.866Z",
+   "gameState": "finished"
+  }
+ ]
+}
