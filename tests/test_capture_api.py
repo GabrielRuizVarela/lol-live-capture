@@ -252,6 +252,15 @@ def test_state_reads_the_file_while_the_worker_runs(home, client, popen, monkeyp
     assert data["actions"][0]["champion_id"] == "888"
 
 
+def test_state_after_stop_keeps_the_last_draft(home, client, popen, killpg):
+    client.post(f"{API}/start", json={"source": "https://youtu.be/abc"})
+    (home / "run" / "capture-state.json").write_text(json.dumps(
+        {"status": "drafting", "actions": [{"sequence": 1, "champion_id": "56"}], "updated_at": "t0"}))
+    client.post(f"{API}/stop")
+    data = client.get(f"{API}/state").json()
+    assert data["status"] == "idle" and data["actions"] == [{"sequence": 1, "champion_id": "56"}]
+
+
 def test_state_with_a_dead_worker_falls_back_to_idle(home, client, popen, monkeypatch):
     client.post(f"{API}/start", json={"source": "https://youtu.be/abc"})
     (home / "run" / "capture-state.json").write_text(json.dumps({"status": "drafting", "source": "https://youtu.be/abc"}))

@@ -172,7 +172,7 @@ def _current_state() -> dict[str, Any]:
         status = raw.get("status")
         pid = _read_pid()
         running = pid is not None and _pid_alive(pid)
-        if status == "error" or running:
+        if status in ("error", "idle") or running:  # "idle" is an explicit Stop: its last draft stays readable
             return raw
     return idle_state()
 

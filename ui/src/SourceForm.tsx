@@ -10,7 +10,7 @@ export function SourceForm({ capture }: { capture: CaptureView }) {
         <input
           id={`${id}-url`} type="text" inputMode="url" spellCheck={false} autoComplete="off"
           placeholder="https://www.youtube.com/watch?v=…  or  https://www.twitch.tv/lolesports"
-          value={capture.url} disabled={capture.on} onChange={e => capture.setUrl(e.target.value)}
+          value={capture.on && capture.state?.source ? capture.state.source : capture.url} disabled={capture.on} onChange={e => capture.setUrl(e.target.value)}
           onKeyDown={e => { if (e.key === 'Enter' && !capture.on) { e.preventDefault(); void capture.start(); } }}
         />
         {capture.on

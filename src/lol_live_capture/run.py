@@ -622,7 +622,8 @@ def run(source: str, state_file: str | os.PathLike, *, frames: Any = None,
                 _write(state, last_frame_wall)
                 last_write = now
         if stopped["value"]:
-            _write(normalize_state(None, source=source, status="idle"), last_frame_wall)
+            # keep the last draft readable after Stop; a new start clears it
+            _write(normalize_state(previous_raw, source=source, status="idle"), last_frame_wall)
         return 0
     except Exception as error:  # noqa: BLE001 - the worker must always report why it died
         _write(normalize_state(None, source=source, status="error", error=str(error)), last_frame_wall)

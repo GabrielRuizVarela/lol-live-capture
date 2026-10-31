@@ -159,7 +159,7 @@ def test_run_sigterm_writes_idle_and_exits_zero(tmp_path, monkeypatch):
         return signal.SIG_DFL
 
     monkeypatch.setattr(run_mod.signal, "signal", fake_signal)
-    tracker = FakeTracker([{"status": "drafting"}])
+    tracker = FakeTracker([{"status": "drafting", "actions": [{"sequence": 1, "champion_id": "56"}]}])
 
     def is_draft_fn(_frame):
         captured["handler"](signal.SIGTERM, None)  # deliver SIGTERM mid-loop
@@ -171,6 +171,7 @@ def test_run_sigterm_writes_idle_and_exits_zero(tmp_path, monkeypatch):
     assert rc == 0
     state = json.loads(state_file.read_text())
     assert state["status"] == "idle" and state["error"] is None
+    assert state["actions"] == [{"sequence": 1, "champion_id": "56"}]  # Stop keeps the draft that was read
     assert len(tracker.calls) == 1  # the loop stopped before the next frame
 
 
