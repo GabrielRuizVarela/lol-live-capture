@@ -25,7 +25,11 @@ export function App({ api }: { api?: CaptureApi }) {
   return (
     <main className="app">
       <header className="top">
-        <h1>lol-live-capture</h1>
+        <span className="mark" aria-hidden="true"><i /><i /><i /></span>
+        <div className="brand">
+          <h1>lol-live-capture</h1>
+          <p className="tag">Live pick &amp; ban reading from a broadcast stream</p>
+        </div>
         <span className={`pill is-${capture.pill.tone}`} role="status" data-testid="pill"><i aria-hidden="true" />{capture.pill.text}</span>
         {demo && <span className="demo-tag">demo, no stream</span>}
       </header>
@@ -51,6 +55,7 @@ export function App({ api }: { api?: CaptureApi }) {
 
       <footer className="foot">
         <span>Game {state?.game_index ?? 1}{state?.stream_t != null ? ` · stream ${Math.round(state.stream_t)} s` : ''}</span>
+        <a className="site" href="https://lol-draft.pages.dev" target="_blank" rel="noreferrer">Worlds 2026 drafts on lol-draft.pages.dev</a>
         <button type="button" disabled={!state?.actions.length} onClick={() => download(state?.actions ?? [])}>Download actions (JSON)</button>
       </footer>
     </main>
