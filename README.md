@@ -66,6 +66,14 @@ Worlds 2026 game played so far with its verified draft, step by step, and what a
 predicted at each pick before it happened. It also has a Pro tools page (live capture, live predictions, copilot, prep)
 with an early-access list.
 
+<div align="center">
+<a href="https://lol-draft.pages.dev"><img src="docs/img/site-3d.jpg" alt="lol-draft in 3D view: the model's five most likely picks as cards on a stage, the team rosters either side" width="900"></a>
+<br><sub><b>3D view.</b> Before every pick or ban, the model's likeliest champions and the reason for each.</sub>
+<br><br>
+<a href="https://lol-draft.pages.dev"><img src="docs/img/site-2d.jpg" alt="lol-draft in 2D view: the full 20-step timeline with every locked ban and pick, and the model's top five for the current step" width="900"></a>
+<br><sub><b>2D view.</b> The whole draft as a timeline you can step through, with what the team actually did next.</sub>
+</div>
+
 **<https://lol-draft.pages.dev>**
 
 ## Quick start

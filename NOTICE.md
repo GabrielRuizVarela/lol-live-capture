@@ -13,8 +13,8 @@ What this repository does and does not contain:
 - `src/lol_live_capture/assets/draft_center.png` is a small crop of the Worlds 2026 champion-select overlay, used as a
   template to tell when the draft screen is visible. It is Riot's broadcast graphic; remove it from your fork if you
   are not comfortable shipping it, and `layout.is_draft_screen` will need another template.
-- The screenshots in `docs/img/` show champion tiles and portraits from Data Dragon in the UI's demo mode, with an
-  invented draft. They are Riot's art; replace them if you are not comfortable shipping them.
+- The screenshots in `docs/img/` show champion tiles and portraits from Data Dragon: the UI's demo mode (an
+  invented draft) and the public lol-draft site (`site-*.jpg`, real Worlds 2026 games). They are Riot's art; replace them if you are not comfortable shipping them.
 - Broadcast stills used by the recognizer tests are **not** in the repository (`tests/fixtures/private/` is git-ignored).
   Those tests skip without them.
 - `lolesports.py` calls the unofficial lolesports.com API with the public key the lolesports.com web client uses.
